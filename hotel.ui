@@ -1,0 +1,2352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>root</class>
+ <widget class="QMainWindow" name="root">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1492</width>
+    <height>802</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Magneto</family>
+    <pointsize>10</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>HOTEL </string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>WINDOW ICON.jpg</normaloff>WINDOW ICON.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+background:#e8fbed;
+}
+
+QWidget
+{
+background:#e8fbed;
+}
+QPlainTextEdit
+{
+padding: 1px;
+border-style: solid;
+border: 4px solid white;
+border-radius: 8px;
+color:#005231;
+background-color: #3BF6CA;
+}
+
+QPlainTextEdit:hover
+{
+border-radius: 20px;
+border: 2px solid #9989ff;
+border-radius: 8px;
+}
+
+QPushButton {
+ background: #3BF6CA;
+ background-image: -webkit-linear-gradient(top, #3BF6CA, #1E62D0);
+ background-image: -moz-linear-gradient(top, #3BF6CA, #1E62D0); 
+background-image: -ms-linear-gradient(top, #3BF6CA, #1E62D0); 
+background-image: -o-linear-gradient(top, #3BF6CA, #1E62D0); 
+background-image: linear-gradient(to bottom, #3BF6CA, #1E62D0);
+ -webkit-border-radius: 0px; 
+-moz-border-radius: 0px; border-radius: 20px; color: #FFFFFF; font-family: Open Sans; font-size: 30px; font-weight: 700; padding: 7px; text-shadow: -7px 0px 10px #4F19FF; border: groove #337FED 1px; text-decoration: none; display: inline-block; cursor: pointer; } 
+
+QPushButton:hover 
+{ 
+background:#005231; 
+text-decoration: none;
+border:2px solid;
+border-raduis:2px solid white;
+
+
+ }
+
+QLineEdit {
+padding: 1px;
+border-style: solid;
+border: 4px solid white;
+border-radius: 8px;
+color:#005231;
+background-color: #3BF6CA;
+
+}
+
+QLineEdit:hover{
+
+border-radius: 20px;
+font-color:#FFFFFF;
+border: 2px solid #9989ff;
+border-radius: 8px;
+}
+
+QLabel
+{
+color:#00A563;
+}
+
+
+QRadioButton::indicator:checked, QRadioButton::indicator:unchecked{
+    color: #b1b1b1;
+    background-color: #3BF6CA;
+    border: 3px solid #b1b1b1;
+    border-radius: 6px;
+}
+
+
+QRadioButton::indicator:checked
+{
+    background-color:#800000;
+}
+
+QComboBox
+{
+background:#3BF6CA;
+	color:#c448aa;
+	font: 75 12pt &quot;Magneto&quot;;
+
+}
+
+QLabel
+{
+background: transparent; border: none;
+}</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1481</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page_2">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>741</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+	background:transparent;
+	    
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>12.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QDateTimeEdit" name="dateTimeEdit">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>670</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateTimeEdit
+{
+	font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+	
+	background-color: grey;
+	
+	color: #b40849;
+
+	border:1px solid;
+	border-radius:5px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>270</y>
+        <width>371</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+background:white;
+color:#004d60;
+border: 1px solid grey;
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+border-radius:5px;
+}
+
+QLineEdit:hover
+{
+border:2px solid white;
+
+border-radius: 5px ;
+color:#004d60;
+	border-color: rgb(8, 98, 38);
+
+}
+
+
+</string>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="maxLength">
+       <number>32767</number>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>USERNAME</string>
+      </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::LogicalMoveStyle</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>340</y>
+        <width>371</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+background:white;
+color:#004d60;
+border: 1px solid grey;
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+border-radius:5px;
+}
+
+QLineEdit:hover
+{
+border: 2px solid white;
+border-color: rgb(8, 98, 38);
+
+border-radius: 5px ;
+color:#004d60;
+
+}
+
+</string>
+      </property>
+      <property name="maxLength">
+       <number>27</number>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>PASSWORD</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>410</y>
+        <width>441</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton { background:#004d60;
+color:white;
+border-radius: 5px;
+}
+
+QPushButton:hover
+{
+	
+	background:white;
+	color:#004d60;
+
+}
+
+/*
+    QPushButton {
+      font: 75 8pt &quot;Tahoma&quot;;
+      color: rgb(16, 37, 127);
+      text-align: left;
+      border: none;
+      text-decoration: none;
+    }
+     
+    QPushButton:hover {
+      color: rgb(116, 137, 127);
+      text-decoration: underline;
+    }
+
+*/</string>
+      </property>
+      <property name="text">
+       <string>LOGIN</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>270</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>man.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>350</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>padlock.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>10</y>
+        <width>371</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+color:#004d60;
+	font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>WELCOME TO HOTEL RESERVATION</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>50</y>
+        <width>261</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>avatar.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>220</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+	color:#004d60;
+	font: 75 18pt &quot;MS Shell Dlg 2&quot;;
+	border:solid 2px green;
+	border-style: solid;
+ 	border: 4px solid #004d60;
+ 	border-radius: 8px;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>SIGN IN </string>
+      </property>
+     </widget>
+     <zorder>label_2</zorder>
+     <zorder>lineEdit</zorder>
+     <zorder>lineEdit_2</zorder>
+     <zorder>pushButton_5</zorder>
+     <zorder>label_4</zorder>
+     <zorder>label_10</zorder>
+     <zorder>dateTimeEdit</zorder>
+     <zorder>label_11</zorder>
+     <zorder>label_12</zorder>
+     <zorder>label_13</zorder>
+    </widget>
+    <widget class="QWidget" name="page">
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+color:#b26ae2 ;
+}
+
+QPushButton:hover
+{
+color:white ;
+}
+
+QLineEdit
+{
+color:#b26ae2 ;
+}
+
+QPlainTextEdit
+{
+color:#b26ae2 ;
+}
+</string>
+     </property>
+     <widget class="QLineEdit" name="LINEEDIT_up_del">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Magneto</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>PUT ID NUMBER TO UPDATE OR DELETE</string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>ID NUMBER</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nameline">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>10</y>
+        <width>281</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Magneto</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>COSTUMER NAME</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>70</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>UPDATE</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>refresh.png</normaloff>refresh.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="familyline">
+      <property name="geometry">
+       <rect>
+        <x>1200</x>
+        <y>10</y>
+        <width>281</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Magneto</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>FAMILY NAME</string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>COSTUMER FAMILY NAME</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>851</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget
+{
+color: rgb(89, 255, 206);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background:#b26ae2;
+	
+}</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NAME</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>STATUS</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>COMMENT</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SERVICE _ TYPE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>STAY DAYS</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>COST</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PAID</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>70</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>PRESS TO DELET FROM HOTEL</string>
+      </property>
+      <property name="text">
+       <string>DELETE</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>DELETE.png</normaloff>DELETE.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>140</y>
+        <width>341</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>PRESS TO REFRESH THE DATABASE</string>
+      </property>
+      <property name="text">
+       <string>LIST COSTUMERS</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>list.png</normaloff>
+        <normalon>list.png</normalon>list.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>540</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>PRESS TO RETURN TO MAIN MENU</string>
+      </property>
+      <property name="text">
+       <string>LOGOUT</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>logout.png</normaloff>logout.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exitbut">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>630</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>EXIT THE APP</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background: transparent; border: none;
+}
+
+QPushButton:hover
+{
+	background-color: #9989ff;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>exit.png</normaloff>
+        <normalon>exit.png</normalon>exit.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>120</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>80</y>
+        <width>411</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+border-radius:15px;
+border: 4px solid black;
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>status.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>540</y>
+        <width>351</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ACOUNTS ACCESS</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>MANAGE.png</normaloff>MANAGE.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="tedit">
+      <property name="geometry">
+       <rect>
+        <x>1170</x>
+        <y>260</y>
+        <width>311</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Magneto</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>WRITE A COMMENT</string>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
+      <property name="backgroundVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>1090</x>
+        <y>180</y>
+        <width>271</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>SELECT SERVICE TYPE</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>ORDINARY ROOMS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SWEET</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>WING</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>70</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>PRESS TO REFRESH THE DATABASE</string>
+      </property>
+      <property name="text">
+       <string>SEARCH</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>search.png</normaloff>search.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox">
+      <property name="geometry">
+       <rect>
+        <x>1370</x>
+        <y>180</y>
+        <width>111</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>NUMBER OF DAYS TO STAY</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSpinBox
+{
+	font: 75 20pt &quot;MS Shell Dlg 2&quot;;
+color:#c448aa;
+border:2px solid #256645;
+}</string>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="cost_line_edit">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>300</y>
+        <width>251</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>15</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>ENTER </string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+	font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+}</string>
+      </property>
+      <property name="maxLength">
+       <number>999999999</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>COST</string>
+      </property>
+     </widget>
+     <widget class="QDateTimeEdit" name="dateTimeEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>281</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateTimeEdit
+{
+	font: 75 13pt &quot;MS Shell Dlg 2&quot;;
+	
+	background:#b26ae2 ;
+	color: white;
+	border:1px solid;
+	border-radius:5px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>281</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LIST EXPORT</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>printer3.png</normaloff>printer3.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_16">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>400</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>PRESS TO CLEAR</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background: transparent; border: none;
+}
+
+QPushButton:hover
+{
+	background-color: #9989ff;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>recycling-bin2.png</normaloff>recycling-bin2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>60</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_19">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>140</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>PRESS TO OPEN THE LIST EXCEL FILE</string>
+      </property>
+      <property name="text">
+       <string>OPEN</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>reading.png</normaloff>reading.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>55</width>
+        <height>55</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>180</y>
+        <width>171</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*QCheckBox
+{
+	font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(226, 92, 24);
+	border: 1px solid rgb(226, 92, 24);
+	border-radius:8px;
+	color:white;
+}*/
+
+QCheckBox
+{
+padding: 1px;
+border-style: solid;
+border: 2px solid white;
+border-radius: 8px;
+color:#b26ae2;
+	
+	
+	background-color: rgb(159, 0, 0);
+	font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+}
+
+
+
+QCheckBox:checked {
+    
+	
+	
+	color: rgb(146, 48, 163);
+	background-color: rgb(73, 184, 53);
+} </string>
+      </property>
+      <property name="text">
+       <string>COST PAID</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_20">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>640</y>
+        <width>281</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>SAVE THE LIST AS EXCEL FILE</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+}</string>
+      </property>
+      <property name="text">
+       <string>SAVE LIST TO</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>save.png</normaloff>save.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>520</y>
+        <width>581</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>10</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">Line
+{
+	font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+}</string>
+      </property>
+      <property name="lineWidth">
+       <number>3</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>10</y>
+        <width>20</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <property name="lineWidth">
+       <number>3</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rdbut2">
+      <property name="geometry">
+       <rect>
+        <x>1340</x>
+        <y>70</y>
+        <width>191</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>ARE YOU MARRIED ? </string>
+      </property>
+      <property name="text">
+       <string>Married</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>married.png</normaloff>married.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>35</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rdbut1">
+      <property name="geometry">
+       <rect>
+        <x>1340</x>
+        <y>118</y>
+        <width>191</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>ARE YOU SINGLE ?</string>
+      </property>
+      <property name="text">
+       <string>Single</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>programmer.png</normaloff>programmer.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>35</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton">
+      <property name="geometry">
+       <rect>
+        <x>1120</x>
+        <y>380</y>
+        <width>151</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton
+{
+
+
+ background: #3BF6CA;
+ background-image: -webkit-linear-gradient(top, #3BF6CA, #1E62D0);
+ background-image: -moz-linear-gradient(top, #3BF6CA, #1E62D0); 
+background-image: -ms-linear-gradient(top, #3BF6CA, #1E62D0); 
+background-image: -o-linear-gradient(top, #3BF6CA, #1E62D0); 
+background-image: linear-gradient(to bottom, #3BF6CA, #1E62D0);
+ -webkit-border-radius: 0px; 
+-moz-border-radius: 0px; border-radius: 20px; color:#b26ae2 ;
+ font-family: Open Sans; font-size: 30px; font-weight: 700; padding: 7px; text-shadow: -7px 0px 10px #4F19FF; border: groove #337FED 1px; text-decoration: none; display: inline-block; cursor: pointer; } 
+
+QToolButton:hover 
+{ 
+background:#005231; 
+text-decoration: none;
+border:2px solid;
+border-raduis:2px solid white;
+
+
+ }</string>
+      </property>
+      <property name="text">
+       <string>ADD</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>add-user.png</normaloff>add-user.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <zorder>rdbut2</zorder>
+     <zorder>rdbut1</zorder>
+     <zorder>LINEEDIT_up_del</zorder>
+     <zorder>nameline</zorder>
+     <zorder>pushButton_3</zorder>
+     <zorder>familyline</zorder>
+     <zorder>tableWidget</zorder>
+     <zorder>pushButton_2</zorder>
+     <zorder>pushButton</zorder>
+     <zorder>exitbut</zorder>
+     <zorder>label</zorder>
+     <zorder>tedit</zorder>
+     <zorder>comboBox</zorder>
+     <zorder>pushButton_7</zorder>
+     <zorder>spinBox</zorder>
+     <zorder>cost_line_edit</zorder>
+     <zorder>dateTimeEdit_3</zorder>
+     <zorder>pushButton_16</zorder>
+     <zorder>pushButton_19</zorder>
+     <zorder>checkBox_2</zorder>
+     <zorder>pushButton_20</zorder>
+     <zorder>pushButton_6</zorder>
+     <zorder>pushButton_14</zorder>
+     <zorder>pushButton_4</zorder>
+     <zorder>line_2</zorder>
+     <zorder>line_3</zorder>
+     <zorder>toolButton</zorder>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit
+{
+padding: 1px;
+border-style: solid;
+border: 4px solid white;
+border-radius: 8px;
+color:#94d7f2;
+background-color: #e6602a;
+font: 75 11pt &quot;Magneto&quot;;
+}
+
+QLineEdit:hover
+{
+border-radius: 20px;
+font-color:#FFFFFF;
+border: 2px solid #3BF6CA;
+border-radius: 8px;
+}
+
+QPushButton
+{
+
+background:#e6602a;
+color:#94d7f2;
+}
+
+QPushButton:hover
+{
+background:#94d7f2;
+color:grey;
+border:2px solid;
+border-raduis:2px solid #3BF6CA;
+border
+}
+
+
+
+
+QLabel
+{
+background: transparent; border: none;
+}</string>
+     </property>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>-20</y>
+        <width>471</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>accounting-book.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>210</y>
+        <width>691</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget
+{
+background:#82bde7;
+color:#e6602a;
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+}</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>USRENAME</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PASSWORD</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EMPLOYEE TYPE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SALARY</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PAID</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>1190</x>
+        <y>560</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>PRESS TO REMOVE RECIPENT</string>
+      </property>
+      <property name="text">
+       <string>REMOVE</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>REMOVE_user.png</normaloff>REMOVE_user.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>55</width>
+        <height>55</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>1220</x>
+        <y>370</y>
+        <width>161</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>PRESS TO ADD RECIPENT</string>
+      </property>
+      <property name="text">
+       <string>ADD</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>ADD RECIPENT.png</normaloff>ADD RECIPENT.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>55</width>
+        <height>55</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>130</y>
+        <width>401</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>ENTER USERNAME</string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="maxLength">
+       <number>25</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>USERNAME</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>210</y>
+        <width>401</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>TYPE PASSSWORD</string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="maxLength">
+       <number>25</number>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>PASSWORD</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>500</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>ENTER ID NUMBER TO REMOVE OR UPDATE USER INFO</string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>ID NUMBER</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_6">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>290</y>
+        <width>401</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>RETYPE PASSWORD</string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="maxLength">
+       <number>25</number>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>CONFIRM PASSWORD</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>560</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>PRESS TO UPDATE RECIPENT</string>
+      </property>
+      <property name="text">
+       <string>UPDATE</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>update - user.png</normaloff>update - user.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>55</width>
+        <height>55</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>470</y>
+        <width>671</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="midLineWidth">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>10</y>
+        <width>291</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>PROFILE.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exitbut_2">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>0</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>EXIT THE APP</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background: transparent; border: none;
+}
+
+
+QPushButton:hover
+{
+background:#94d7f2;
+color:grey;
+border:2px solid;
+border-raduis:2px solid #3BF6CA;
+border
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>exit.png</normaloff>
+        <normalon>exit.png</normalon>exit.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>120</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exitbut_3">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>0</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>RETURN TO PERVIOUS WINDOW</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background: transparent; border: none;
+}
+
+
+QPushButton:hover
+{
+background:#94d7f2;
+color:grey;
+border:2px solid;
+border-raduis:2px solid #3BF6CA;
+border
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>back.png</normaloff>back.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>80</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>370</y>
+        <width>231</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>EMPLYEE_TYPE</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox
+{
+background:#e6602a;
+color:#FFFFFF;
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>ADMIN</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RECIPENT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ROOM SERVANT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CLEANER</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>341</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>PRESS TO REFRESH THE DATABASE</string>
+      </property>
+      <property name="text">
+       <string>LIST EMPLOYEES</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>team.png</normaloff>team.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_7">
+      <property name="geometry">
+       <rect>
+        <x>1050</x>
+        <y>650</y>
+        <width>331</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>ENTER USERNAME</string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="maxLength">
+       <number>20</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>NAME SEARCH</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="geometry">
+       <rect>
+        <x>1210</x>
+        <y>500</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>SEARCH FOR ID OR NAME</string>
+      </property>
+      <property name="text">
+       <string>SEARCH</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons8-find-user-male-48.png</normaloff>icons8-find-user-male-48.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_8">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>260</y>
+        <width>221</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>ENTER USERNAME</string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+	font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+}</string>
+      </property>
+      <property name="maxLength">
+       <number>999999999</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>SALARY</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>1320</x>
+        <y>140</y>
+        <width>53</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>man.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>1320</x>
+        <y>220</y>
+        <width>53</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>padlock.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QDateTimeEdit" name="dateTimeEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>10</y>
+        <width>301</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateTimeEdit
+{
+	font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+	
+	background: #e6602a;
+	color: #94d7f2;
+	border:1px solid;
+	border-radius:5px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>140</y>
+        <width>281</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LIST EXPORT</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>printer2.png</normaloff>printer2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_15">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>500</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>PRESS TO CLEAR</string>
+      </property>
+      <property name="text">
+       <string>CLEAR</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>recycling-bin.png</normaloff>recycling-bin.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>65</width>
+        <height>65</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_17">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>70</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>ABOUT THE DEVELPOER OF THIS APPLICATION</string>
+      </property>
+      <property name="text">
+       <string>ABOUT</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>65</width>
+        <height>65</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_18">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>590</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>PRESS TO OPEN THE LIST EXCEL FILE</string>
+      </property>
+      <property name="text">
+       <string>OPEN</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>book.png</normaloff>book.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>55</width>
+        <height>65</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>330</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QCheckBox
+{
+padding: 1px;
+border-style: solid;
+border: 2px solid white;
+border-radius: 8px;
+color:#94d7f2;
+	background-color: rgb(204, 0, 0);
+	font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+}
+
+
+QCheckBox:checked {
+    
+	
+	background-color: rgb(73, 184, 53);
+} </string>
+      </property>
+      <property name="text">
+       <string>SALARY PAID</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_21">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>660</y>
+        <width>281</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>SAVE THE LIST AS EXCEL FILE</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+}</string>
+      </property>
+      <property name="text">
+       <string>SAVE LIST TO</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>floppy-disk.png</normaloff>floppy-disk.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>140</y>
+        <width>20</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="lineWidth">
+       <number>3</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>1320</x>
+        <y>300</y>
+        <width>53</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>checked.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>1320</x>
+        <y>660</y>
+        <width>53</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>PEOPLE SEARCH.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1492</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>pushButton_5</tabstop>
+  <tabstop>nameline</tabstop>
+  <tabstop>familyline</tabstop>
+  <tabstop>LINEEDIT_up_del</tabstop>
+  <tabstop>cost_line_edit</tabstop>
+  <tabstop>tedit</tabstop>
+  <tabstop>lineEdit_3</tabstop>
+  <tabstop>lineEdit_4</tabstop>
+  <tabstop>lineEdit_6</tabstop>
+  <tabstop>lineEdit_8</tabstop>
+  <tabstop>pushButton_9</tabstop>
+  <tabstop>lineEdit_5</tabstop>
+  <tabstop>lineEdit_7</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>spinBox</tabstop>
+  <tabstop>rdbut1</tabstop>
+  <tabstop>dateTimeEdit_3</tabstop>
+  <tabstop>pushButton_14</tabstop>
+  <tabstop>pushButton_16</tabstop>
+  <tabstop>tableWidget_2</tabstop>
+  <tabstop>pushButton_8</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>rdbut2</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>dateTimeEdit</tabstop>
+  <tabstop>pushButton_10</tabstop>
+  <tabstop>exitbut_2</tabstop>
+  <tabstop>exitbut_3</tabstop>
+  <tabstop>comboBox_2</tabstop>
+  <tabstop>pushButton_11</tabstop>
+  <tabstop>exitbut</tabstop>
+  <tabstop>pushButton_12</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>dateTimeEdit_2</tabstop>
+  <tabstop>pushButton_13</tabstop>
+  <tabstop>pushButton_15</tabstop>
+  <tabstop>pushButton_17</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
